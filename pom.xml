@@ -12,9 +12,7 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
-  <groupId>pe.ty</groupId>
   <artifactId>persons</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>persons</name>
   <description>Demo project for Spring Boot</description>
 
@@ -26,6 +24,11 @@
     <dependency>
       <groupId>pe.ty</groupId>
       <artifactId>ty-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
     </dependency>
 
     <dependency>
