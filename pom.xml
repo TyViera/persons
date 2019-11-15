@@ -23,9 +23,10 @@
   <dependencies>
     <dependency>
       <groupId>pe.ty</groupId>
-      <artifactId>ty-starter-web</artifactId>
+      <artifactId>ty-starter-webflux</artifactId>
     </dependency>
 
+    <!--Components-->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
@@ -41,8 +42,8 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
