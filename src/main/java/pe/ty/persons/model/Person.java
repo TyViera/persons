@@ -9,8 +9,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import pe.ty.persons.core.jackson.NonEmptyModelFilter;
-import pe.ty.persons.core.model.BaseTyModel;
+import pe.ty.core.jackson.NonEmptyModelFilter;
+import pe.ty.core.model.BaseTyModel;
 
 @Getter
 @Setter
@@ -19,6 +19,8 @@ import pe.ty.persons.core.model.BaseTyModel;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 public class Person extends BaseTyModel {
+
+  public final static Person EMPTY = new Person();
 
   private String personId;
   private String name;

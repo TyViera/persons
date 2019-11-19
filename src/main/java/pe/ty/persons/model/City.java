@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import pe.ty.persons.core.model.BaseTyModel;
+import pe.ty.core.model.BaseTyModel;
 
 @Getter
 @Setter
@@ -16,7 +16,7 @@ import pe.ty.persons.core.model.BaseTyModel;
 @EqualsAndHashCode(callSuper = false)
 public class City extends BaseTyModel {
 
-  private final static City EMPTY = new City();
+  public final static City EMPTY = new City();
 
   private Long cityId;
   private String name;
