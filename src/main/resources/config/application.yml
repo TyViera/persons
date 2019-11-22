@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: 'persons-v1'
 application:
   rest:
     base-url: '/api/v1'
