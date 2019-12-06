@@ -27,9 +27,6 @@ public class PersonsController {
   }
 
   private <E> Flux<E> notFound() {
-
-    org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler a;
-
     return Flux.error(CoreException.builder().status(CoreExceptionStatus.NOT_FOUND).build());
   }
 

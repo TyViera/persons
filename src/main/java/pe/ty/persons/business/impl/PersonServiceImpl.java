@@ -56,7 +56,7 @@ public class PersonServiceImpl implements PersonService {
 
   @Override
   public Mono<Person> getPersonById(String personId) {
-    if (Math.random() < 0.8) {
+    if (Math.random() < 0.08) {
       throw CoreException.builder().status(CoreExceptionStatus.NOT_FOUND).build();
     }
     return Mono.just(Person.builder()
